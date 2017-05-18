@@ -1,7 +1,7 @@
 from dc_base_scrapers.xml_scraper import GmlScraper
 
 
-stations_url = "https://webtest.rbkc.gov.uk/arcgis/services/LBHF/Administration/MapServer/WFSServer?service=WFS&version=1.0.0&request=GetFeature&typeNames=Administration%3APolling_Stations"
+stations_url = "https://webtest.rbkc.gov.uk/arcgis/services/LBHF/Administration/MapServer/WFSServer?service=WFS&version=1.1.0&request=GetFeature&typeNames=Administration%3APolling_Stations"
 stations_fields = {
     '{WFS}OBJECTID': 'OBJECTID',
     '{WFS}POLLING_ST': 'POLLING_ST',
@@ -12,7 +12,7 @@ stations_fields = {
     '{WFS}LOCATION': 'LOCATION',
 }
 
-districts_url = "https://webtest.rbkc.gov.uk/arcgis/services/LBHF/Administration/MapServer/WFSServer?service=WFS&version=1.0.0&request=GetFeature&typeNames=Administration%3APolling_Districts"
+districts_url = "https://webtest.rbkc.gov.uk/arcgis/services/LBHF/Administration/MapServer/WFSServer?service=WFS&version=1.1.0&request=GetFeature&typeNames=Administration%3APolling_Districts"
 districts_fields = {
     '{WFS}OBJECTID': 'OBJECTID',
     '{WFS}MAPKEY': 'MAPKEY',
